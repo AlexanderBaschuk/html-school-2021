@@ -1,0 +1,16 @@
+@import "/styles/reset.css";
+@import "/styles/font.css";
+@import "/styles/body.css";
+
+@import "/styles/blocks/header.css";
+@import "/styles/blocks/main.css";
+@import "/styles/blocks/footer.css";
+
+@import "/styles/blocks/advantages.css";
+@import "/styles/blocks/creator.css";
+@import "/styles/blocks/hotel-search.css";
+@import "/styles/blocks/map.css";
+@import "/styles/blocks/socials.css";
+
+@import "/styles/elements/button.css";
+@import "/styles/elements/text.css";

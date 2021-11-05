@@ -1,0 +1,81 @@
+.advantages__header {
+  background-color: white;
+  padding: 32px 18px 27px 17px;
+}
+
+.advantages__title {
+  margin-bottom: 30px; /* Сколько? */
+}
+
+.advantages__article-emphasized-block {
+  position: relative;
+  background-color: #81b3d2;
+  color: #fff;
+  padding: 55px 20px 39px 18px;
+  overflow: hidden;
+}
+
+.advantages__reason-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 12px; /* Сколько? */
+}
+
+.advantages__reason-number {
+  margin-bottom: 12px; /* Сколько? */
+}
+
+.advantages__article-neutral-block {
+  background-color: #eeeeee;
+  padding: 26px 26px 26px 24px;
+}
+
+.advantages__triangle {
+  position: absolute;
+  top: -16px;
+  transform: translate(-50%, 0);
+}
+
+.advantages__reason-large-image-wrapper {
+  display: flex;
+  min-height: 260px; /* почему в итоге получается 270? */
+  background-color: #b7c7dd;
+}
+
+.advantages__reason-subitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* gap: 8px; /* Не работает :( */
+  padding-bottom: 32px; /* Сколько? */
+}
+
+.advantages__reason-subitem {
+  padding: 16px 4px 0 18px; /* Сколько? */
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.advantages__reason-icon-wrapper {
+  display: flex;
+  height: 40px;
+  flex: 40px 0 0;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.advantages__reason-subitem-description {
+  text-align: left;
+  padding: 8px 0 0 0;
+}
+
+.advantages__reason-subitem-title {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px; /* Сколько? */
+}

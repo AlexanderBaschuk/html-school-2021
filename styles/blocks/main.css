@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__banner {
+  position: relative;
+  background-color: #ddebf4;
+  background-image: url("/Images/back-mobile.jpg");
+  min-height: 389px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main__banner-img {
+  position: absolute;
+  top: 90px;
+  transform: translate(-50%, 0);
+}
+
+.main__banner-triangle {
+  position: absolute;
+  top: 332px;
+  transform: translate(-50%, 0);
+}

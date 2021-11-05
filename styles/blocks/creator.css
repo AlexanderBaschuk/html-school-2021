@@ -1,0 +1,15 @@
+.creator {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Как правильно подровнять слово и логотип? */
+  gap: 6px; /* Сколько? */
+}
+
+.creator__name {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.creator__link {
+  display: inline-flex;
+}

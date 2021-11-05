@@ -26,6 +26,22 @@
   margin-bottom: 12px; /* Сколько? */
 }
 
+.advantages__reason {
+  position: relative;
+}
+
+/* Separators after 3-th and 4-th reasons*/
+.advantages__reason:nth-child(n+3):nth-last-child(n+2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: 1px solid #d6d6d6;
+  height: 1px;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+}
+
 .advantages__article-neutral-block {
   background-color: #eeeeee;
   padding: 26px 26px 26px 24px;

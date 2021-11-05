@@ -30,8 +30,13 @@
   position: relative;
 }
 
-/* Separators after 3-th and 4-th reasons*/
-.advantages__reason:nth-child(n+3):nth-last-child(n+2)::after {
+.small-card {
+  background-color: #eeeeee;
+  padding: 26px 26px 26px 24px;
+}
+
+/* Separators */
+.small-card:not(:last-child)::after {
   content: "";
   display: block;
   position: absolute;

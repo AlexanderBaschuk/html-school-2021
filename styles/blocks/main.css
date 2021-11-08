@@ -7,9 +7,17 @@
   position: relative;
   background-color: #ddebf4;
   background-image: url("/Images/back-mobile.jpg");
-  min-height: 389px;
   text-align: center;
   overflow: hidden;
+  background-position: bottom;
+}
+
+.main__banner.title-slogan {
+  min-height: 389px;
+}
+
+.main__banner.title-only {
+  min-height: 157px;
 }
 
 .main__banner-img {
@@ -18,8 +26,15 @@
   transform: translate(-50%, 0);
 }
 
+.main__banner-main-text {
+  position: absolute;
+  top: 51px;
+  transform: translate(-50%, 0);
+}
+
 .main__banner-triangle {
   position: absolute;
-  top: 332px;
+  _top: 332px;
+  bottom: 0;
   transform: translate(-50%, 0);
 }

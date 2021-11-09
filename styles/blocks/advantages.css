@@ -80,6 +80,10 @@
   gap: 16px;
 }
 
+.advantages__reason-subitem-text {
+  color: #333;
+}
+
 .advantages__reason-icon-wrapper {
   display: flex;
   height: 40px;

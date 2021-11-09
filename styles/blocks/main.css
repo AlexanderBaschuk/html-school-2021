@@ -34,7 +34,6 @@
 
 .main__banner-triangle {
   position: absolute;
-  _top: 332px;
   bottom: 0;
   transform: translate(-50%, 0);
 }

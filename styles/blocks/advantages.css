@@ -1,6 +1,6 @@
 .advantages__header {
   background-color: #fff;
-  padding: 32px 18px 27px 17px;
+  padding: 32px 20px 28px 20px;
 }
 
 .advantages__title {
@@ -11,7 +11,7 @@
   position: relative;
   background-color: #81b3d2;
   color: #fff;
-  padding: 55px 20px 36px 18px;
+  padding: 54px 20px 36px 20px;
   overflow: hidden;
 }
 
@@ -32,7 +32,7 @@
 
 .small-card {
   background-color: #eeeeee;
-  padding: 26px 26px 26px 24px;
+  padding: 26px 20px;
 }
 
 /* Separators */
@@ -68,15 +68,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-bottom: 32px; /* Сколько? */
+  background-color: #fff;
+  padding: 26px 20px 36px 20px;
 }
 
 .advantages__reason-subitem {
-  padding: 16px 4px 0 18px; /* Сколько? */
   display: flex;
   justify-content: left;
   align-items: flex-start;
   gap: 16px;
+}
+
+.advantages__reason-subitem:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .advantages__reason-subitem-text {

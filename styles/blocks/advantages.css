@@ -55,12 +55,12 @@
 .advantages__triangle {
   position: absolute;
   top: -16px;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
 }
 
 .advantages__reason-large-image-wrapper {
   display: flex;
-  min-height: 260px; /* почему в итоге получается 270? */
+  min-height: 260px;
   background-color: #b7c7dd;
 }
 
@@ -68,7 +68,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* gap: 8px; /* Не работает :( */
   padding-bottom: 32px; /* Сколько? */
 }
 

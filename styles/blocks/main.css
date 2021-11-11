@@ -23,17 +23,17 @@
 .main__banner-img {
   position: absolute;
   top: 90px;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
 }
 
 .main__banner-main-text {
   position: absolute;
   top: 51px;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
 }
 
 .main__banner-triangle {
   position: absolute;
   bottom: 0;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
 }

@@ -1,7 +1,5 @@
 .socials {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-bottom: 45px;
   gap: 6px;
 }

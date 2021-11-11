@@ -11,7 +11,7 @@
   position: relative;
   background-color: #81b3d2;
   color: #fff;
-  padding: 55px 20px 39px 18px;
+  padding: 55px 20px 36px 18px;
   overflow: hidden;
 }
 
@@ -22,7 +22,7 @@
   margin-bottom: 12px; /* Сколько? */
 }
 
-.advantages__reason-number {
+.advantages__reason-text:not(:last-of-type) {
   margin-bottom: 12px; /* Сколько? */
 }
 

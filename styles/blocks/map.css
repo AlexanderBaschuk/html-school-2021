@@ -1,5 +1,13 @@
 .map {
+  position: relative;
   display: flex;
   background-color: #cbddaa;
   min-height: 350px;
+}
+
+.map__marker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -10,7 +10,29 @@
 
   <body class="body">
     <header class="header">
-      <a class="header__logo-link">
+      <nav class="header__nav-menu menu-visible">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Фото и видео</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="/form.html">Форма отзыва</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+        <button class="header__toggle-menu-button menu-button">
+          Меню сайта
+          <span class="header__toggle-menu-button-line first"></span>
+          <span class="header__toggle-menu-button-line second"></span>
+          <span class="header__toggle-menu-button-line third"></span>
+        </button>
+      </nav>
+      <a class="header__logo-link menu-visible">
         <svg
           class="header__logo"
           width="102"
@@ -67,37 +89,6 @@
           />
         </svg>
       </a>
-
-      <nav class="header__nav-menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item">
-            <a class="header__menu-link">Главная</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Фото и видео</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="/form.html">Форма отзыва</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__toggle-menu-button">
-        <svg
-          width="23"
-          height="22"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>Показать меню</title>
-          <path
-            d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"
-            fill="#81B3D2"
-          />
-        </svg>
-      </button>
     </header>
 
     <main class="main">

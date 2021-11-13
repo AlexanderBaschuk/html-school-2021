@@ -1,2 +1,130 @@
 .header {
+  position: relative;
+}
+
+.header__logo-link {
+  _visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.menu-visible .header__logo-link {
+  visibility: hidden;
+}
+
+.header__nav-menu {
+  position: relative;
+  background-color: #fff;
+  height: 56px;
+}
+
+.header__menu-list {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  background-color: #678fa8;
+  z-index: 2;
+}
+
+.menu-visible .header__menu-list {
+  visibility: visible;
+}
+
+.header__menu-item {
+  width: 100%;
+  height: 55px;
+  background-color: #81b3d2;
+  position: relative;
+}
+
+.header__menu-item:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+.header__menu-item:not(:first-child) {
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.header__menu-item:last-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.header__menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.header__toggle-menu-button {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+  z-index: 3;
+}
+
+.header__toggle-menu-button-line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 20%;
+  left: 0;
+  background-color: #81b3d2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header__toggle-menu-button-line.first {
+  top: 0;
+}
+
+.header__toggle-menu-button-line.second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__toggle-menu-button-line.third {
+  bottom: 0;
+}
+
+.menu-visible .header__toggle-menu-button-line {
+  background-color: #fff;
+}
+
+.menu-visible .header__toggle-menu-button-line.first {
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-visible .header__toggle-menu-button-line.second {
+    display: none;
+}
+
+.menu-visible .header__toggle-menu-button-line.third {
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }

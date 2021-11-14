@@ -1,10 +1,17 @@
-.content-title {
+.header {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  color: #000;
 }
 
-.content-description {
+.header-large {
+  font-weight: 700;
+  font-size: 21px;
   line-height: 26px;
-  color: #333;
+  color: #000;
+}
+
+.paragraph-wide {
+  line-height: 26px;
 }

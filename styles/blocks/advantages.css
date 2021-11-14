@@ -10,15 +10,16 @@
 .advantages__article-emphasized-block {
   position: relative;
   background-color: #81b3d2;
-  color: #fff;
   padding: 54px 20px 36px 20px;
   overflow: hidden;
+  color: #fff;
+}
+
+.advantages__article-emphasized-block .header {
+  color: #fff;
 }
 
 .advantages__reason-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   margin-bottom: 12px; /* Сколько? */
 }
 
@@ -83,10 +84,6 @@
   margin-bottom: 16px;
 }
 
-.advantages__reason-subitem-text {
-  color: #333;
-}
-
 .advantages__reason-icon-wrapper {
   display: flex;
   height: 40px;
@@ -102,8 +99,5 @@
 
 .advantages__reason-subitem-title {
   display: block;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   margin-bottom: 16px; /* Сколько? */
 }

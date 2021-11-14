@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/style.css" />
     <title>Sedona</title>
+    <script src="/scripts/nav-menu.js"></script>
   </head>
 
   <body class="body">
     <header class="header">
-      <nav class="header__nav-menu menu-visible">
+      <nav class="header__nav-menu">
         <ul class="header__menu-list">
           <li class="header__menu-item">
             <a class="header__menu-link" href="/index.html">Главная</a>
@@ -25,7 +26,7 @@
             <a class="header__menu-link" href="#">HTML Academy</a>
           </li>
         </ul>
-        <button class="header__toggle-menu-button menu-button">
+        <button class="header__toggle-menu-button menu-button" onCLick="toggleMenu()">
           Меню сайта
           <span class="header__toggle-menu-button-line first"></span>
           <span class="header__toggle-menu-button-line second"></span>

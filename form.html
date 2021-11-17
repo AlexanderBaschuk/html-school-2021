@@ -26,7 +26,10 @@
             <a class="header__menu-link" href="#">HTML Academy</a>
           </li>
         </ul>
-        <button class="header__toggle-menu-button menu-button" onCLick="toggleMenu()">
+        <button
+          class="header__toggle-menu-button menu-button"
+          onCLick="toggleMenu()"
+        >
           Меню сайта
           <span class="header__toggle-menu-button-line first"></span>
           <span class="header__toggle-menu-button-line second"></span>
@@ -122,44 +125,201 @@
         </svg>
       </div>
 
-      <section class="form">
-        <h2 class="form__header header">Оставьте свой отзыв</h2>
-        <p class="form__description paragraph-wide">
-          Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них,
-          а&nbsp;также о&nbsp;посещенных вами достопримечательностях
-        </p>
+      <section class="form-section">
+        <div class="form-intro">
+          <h2 class="form-intro__header header">Оставьте свой отзыв</h2>
+          <p class="form-intro__description paragraph-wide">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них,
+            а&nbsp;также о&nbsp;посещенных вами достопримечательностях
+          </p>
+        </div>
 
-        <section class="form__introduce">
-          <h3 class="form__section-header header">Представьтесь:</h3>
-          <!--TODO-->
-        </section>
+        <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__fieldset introduce">
+            <legend class="form__legend">Представьтесь:</legend>
+            <ul class="form__list">
+              <li class="form__list-item">
+                <label class="form__label">
+                  <span class="form__label-text">Имя*:</span>
+                  <input
+                    class="form__input input-text"
+                    type="text"
+                    name="firstname"
+                    value="Петр"
+                    placeholder="Имя"
+                    required
+                  />
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__label">
+                  <span class="form__label-text">Фамилия*:</span>
+                  <input
+                    class="form__input input-text"
+                    type="text"
+                    name="lastname"
+                    value="Иванов"
+                    placeholder="Фамилия"
+                    required
+                  />
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__label">
+                  <span class="form__label-text">Отчество:</span>
+                  <input
+                    class="form__input input-text"
+                    type="text"
+                    name="patronymic"
+                    value="Александрович"
+                    placeholder="Отчество"
+                  />
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <section class="form__contact">
-          <h3 class="form__section-heade header header">Контактная информация:</h3>
-          (TODO)
-        </section>
+          <fieldset class="form__fieldset contacts">
+            <legend class="form__legend">Контактная информация:</legend>
+            <ul class="form__list">
+              <li class="form__list-item">
+                <label class="form__label">
+                  <span class="form__label-text">Контактный телефон*:</span>
+                  <input
+                    class="form__input input-tel"
+                    type="tel"
+                    name="tel"
+                    value=""
+                    placeholder="Введите телефон"
+                    required
+                  />
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__label">
+                  <span class="form__label-text">Электронная почта*:</span>
+                  <input
+                    class="form__input input-email"
+                    type="email"
+                    name="email"
+                    value=""
+                    placeholder="Введите e-mail"
+                    required
+                  />
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <section class="form__impression">
-          <h3 class="form__section-header header">Ваше общее впечатление:</h3>
-          (TODO)
-        </section>
+          <fieldset class="form__fieldset feeling">
+            <legend class="form__legend">Ваше общее впечатление:</legend>
+            <ul class="form__list">
+              <li class="form__list-item">
+                <label class="form__label">
+                  <input
+                    class="form__input input-radio"
+                    type="radio"
+                    name="feeling"
+                    checked
+                  />
+                  <span class="form__label-text text-after"
+                    >Скорее положительное</span
+                  >
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__label">
+                  <input
+                    class="form__input input-radio"
+                    type="radio"
+                    name="firstname"
+                  />
+                  <span class="form__label-text text-after"
+                    >Скорее отрицательное</span
+                  >
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__label">
+                  <input
+                    class="form__input input-radio"
+                    type="radio"
+                    name="firstname"
+                  />
+                  <span class="form__label-text text-after"
+                    >Затрудняюсь ответить</span
+                  >
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <section class="form__sightseeing">
-          <h3 class="form__section-header header">
-            Посещенные достопримечательности:
-          </h3>
-          (TODO)
-        </section>
+          <fieldset class="form__fieldset places">
+            <legend class="form__legend">
+              Посещенные достопримечательности:
+            </legend>
+            <ul class="form__list">
+              <li class="form__list-item">
+                <label class="form__label">
+                  <input
+                    class="form__input input-checkbox"
+                    type="checkbox"
+                    name="bridge"
+                  />
+                  <span class="form__label-text text-after">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__label">
+                  <input
+                    class="form__input input-checkbox"
+                    type="checkbox"
+                    name="mountain"
+                  />
+                  <span class="form__label-text text-after">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__label">
+                  <input
+                    class="form__input input-checkbox"
+                    type="checkbox"
+                    name="park"
+                  />
+                  <span class="form__label-text text-after">Сайд-парк</span>
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__label">
+                  <input
+                    class="form__input input-checkbox"
+                    type="checkbox"
+                    name="rocks"
+                  />
+                  <span class="form__label-text text-after">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <section class="form__emotions">
-          <h3 class="form__section-header header">Опишите свои эмоции:</h3>
-          (TODO)
-        </section>
+          <fieldset class="form__fieldset emotions">
+            <legend class="form__legend">Опишите свои эмоции:</legend>
+            <textarea
+              class="form__textarea"
+              class="form__textarea"
+              name="emotion"
+              placeholder="Опишите подробно все свои восторги"
+            ></textarea>
+          </fieldset>
 
-        <button class="form__submit-button button">Отправить отзыв</button>
-        <p class="form__required-fields-note">
-          *&nbsp;&mdash; обязательное поле
-        </p>
+          <button class="form__submit-button button" type="submit">
+            Отправить отзыв
+          </button>
+
+          <p class="form__required-fields-note">
+            *&nbsp;&mdash; обязательное поле
+          </p>
+        </form>
       </section>
     </main>
 

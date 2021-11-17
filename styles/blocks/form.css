@@ -1,3 +1,22 @@
+.form-section {
+  background-color: #fff;
+  padding: 36px 20px 40px 20px;
+}
+
+.form-intro {
+  padding-bottom: 16px;
+}
+
+.form__fieldset {
+  border: 0;
+  padding: 20px 0 32px 0;
+  margin: 0;
+}
+
+.form__legend {
+  padding: 0;
+}
+
 .form__submit-button {
-    width: 100%;
+  width: 100%;
 }

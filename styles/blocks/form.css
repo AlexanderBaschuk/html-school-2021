@@ -15,6 +15,10 @@
   margin: 0;
 }
 
+.form__fieldset:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .form__legend {
   position: absolute;
   top: 20px;

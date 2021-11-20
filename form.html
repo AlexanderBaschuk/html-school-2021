@@ -136,10 +136,10 @@
 
         <form class="form" method="POST" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset introduce">
-            <legend class="form__legend">Представьтесь:</legend>
+            <legend class="form__legend header">Представьтесь:</legend>
             <ul class="form__list">
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-text">
                   <span class="form__label-text">Имя*:</span>
                   <input
                     class="form__input input-text"
@@ -152,7 +152,7 @@
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-text">
                   <span class="form__label-text">Фамилия*:</span>
                   <input
                     class="form__input input-text"
@@ -165,7 +165,7 @@
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-text">
                   <span class="form__label-text">Отчество:</span>
                   <input
                     class="form__input input-text"
@@ -180,10 +180,10 @@
           </fieldset>
 
           <fieldset class="form__fieldset contacts">
-            <legend class="form__legend">Контактная информация:</legend>
+            <legend class="form__legend header">Контактная информация:</legend>
             <ul class="form__list">
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-contacts">
                   <span class="form__label-text">Контактный телефон*:</span>
                   <input
                     class="form__input input-tel"
@@ -196,7 +196,7 @@
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-contacts">
                   <span class="form__label-text">Электронная почта*:</span>
                   <input
                     class="form__input input-email"
@@ -212,10 +212,10 @@
           </fieldset>
 
           <fieldset class="form__fieldset feeling">
-            <legend class="form__legend">Ваше общее впечатление:</legend>
+            <legend class="form__legend header">Ваше общее впечатление:</legend>
             <ul class="form__list">
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-checkbox-radio">
                   <input
                     class="form__input input-radio"
                     type="radio"
@@ -228,7 +228,7 @@
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-checkbox-radio">
                   <input
                     class="form__input input-radio"
                     type="radio"
@@ -240,7 +240,7 @@
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-checkbox-radio">
                   <input
                     class="form__input input-radio"
                     type="radio"
@@ -255,7 +255,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset places">
-            <legend class="form__legend">
+            <legend class="form__legend header">
               Посещенные достопримечательности:
             </legend>
             <ul class="form__list">
@@ -270,7 +270,7 @@
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-checkbox-radio">
                   <input
                     class="form__input input-checkbox"
                     type="checkbox"
@@ -280,7 +280,7 @@
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-checkbox-radio">
                   <input
                     class="form__input input-checkbox"
                     type="checkbox"
@@ -290,7 +290,7 @@
                 </label>
               </li>
               <li class="form__list-item">
-                <label class="form__label">
+                <label class="form__label label-checkbox-radio">
                   <input
                     class="form__input input-checkbox"
                     type="checkbox"
@@ -303,18 +303,19 @@
           </fieldset>
 
           <fieldset class="form__fieldset emotions">
-            <legend class="form__legend">Опишите свои эмоции:</legend>
+            <legend class="form__legend header">Опишите свои эмоции:</legend>
             <textarea
-              class="form__textarea"
               class="form__textarea"
               name="emotion"
               placeholder="Опишите подробно все свои восторги"
             ></textarea>
           </fieldset>
 
-          <button class="form__submit-button button" type="submit">
-            Отправить отзыв
-          </button>
+          <div class="form__submit-button-wrapper">
+            <button class="form__submit-button button" type="submit">
+              Отправить отзыв
+            </button>
+          </div>
 
           <p class="form__required-fields-note">
             *&nbsp;&mdash; обязательное поле

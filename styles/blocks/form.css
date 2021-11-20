@@ -7,6 +7,10 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+.form-intro__header {
+  margin-bottom: 32px;
+}
+
 .form__fieldset {
   display: block;
   border: 0;

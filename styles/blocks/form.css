@@ -35,12 +35,26 @@
   width: 100%;
 }
 
+.form__input {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__input::placeholder {
+  font-weight: normal;
+}
+
 .form__label.label-text {
   justify-content: space-between;
 }
 
 .label-checkbox-radio {
   cursor: pointer;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .form__label.label-contacts {
@@ -79,10 +93,19 @@
 .form__textarea {
   width: 100%;
   min-height: 160px;
+  padding: 12px 20px 28px 20px;
   resize: vertical;
   background-color: #f2f2f2;
   border: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
 }
+
+.form__textarea::placeholder {
+  font-weight: normal;
+}
+
 
 .form__textarea:focus {
   outline: none;

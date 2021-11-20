@@ -13,10 +13,7 @@
   border: 0;
   padding: 64px 20px 32px 20px;
   margin: 0;
-}
-
-.form__fieldset:not(:last-of-type) {
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 
 .form__legend {

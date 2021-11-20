@@ -39,6 +39,10 @@
   justify-content: space-between;
 }
 
+.label-checkbox-radio {
+  cursor: pointer;
+}
+
 .form__label.label-contacts {
   flex-direction: column;
   align-items: flex-start;

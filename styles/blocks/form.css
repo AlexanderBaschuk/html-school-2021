@@ -5,22 +5,23 @@
 
 .form-intro {
   padding: 36px 20px 16px 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .form__fieldset {
   display: block;
-  position: relative;
   border: 0;
-  padding: 64px 20px 32px 20px;
+  padding: 40px 20px 32px 20px;
   margin: 0;
-  border-top: 1px solid #e5e5e5;
+}
+
+.form__fieldset:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .form__legend {
-  position: absolute;
+  position: relative;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   padding: 0;
 }
 

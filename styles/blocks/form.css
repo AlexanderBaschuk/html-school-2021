@@ -46,7 +46,7 @@
 }
 
 .form__input::placeholder {
-  font-weight: normal;
+  color: #000;
 }
 
 .form__label.label-text {
@@ -107,9 +107,8 @@
 }
 
 .form__textarea::placeholder {
-  font-weight: normal;
+  color: #000;
 }
-
 
 .form__textarea:focus {
   outline: none;

@@ -39,6 +39,10 @@
   width: 100%;
 }
 
+.form__label-text {
+  text-align: left;
+}
+
 .form__input {
   font-weight: bold;
   font-size: 18px;

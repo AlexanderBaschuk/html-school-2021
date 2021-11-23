@@ -43,16 +43,6 @@
   text-align: left;
 }
 
-.form__input {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.form__input::placeholder {
-  color: #000;
-}
-
 .form__label.label-text {
   justify-content: space-between;
 }
@@ -79,11 +69,38 @@
   height: 58px;
   background-color: #f2f2f2;
   border: none;
-  padding: 18px 22px 14px 22px
+  padding: 18px 22px 14px 22px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .form__input:focus {
-  outline: none;
+  outline: 1px solid;
+}
+
+.form__input::placeholder {
+  color: #000;
+}
+
+.form__input-with-icon {
+  position: relative;
+}
+
+.form__input-with-icon .form__input {
+  padding-right: 80px;
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
 }
 
 .input-text {

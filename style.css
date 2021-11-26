@@ -15,4 +15,6 @@
 
 @import "/styles/elements/button.css";
 @import "/styles/elements/menu-button.css";
+@import "/styles/elements/radio-button.css";
+@import "/styles/elements/checkbox.css";
 @import "/styles/elements/text-mixins.css";

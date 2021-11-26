@@ -12,3 +12,8 @@
   border: none;
   text-transform: uppercase;
 }
+
+.button:focus {
+  _outline: 1px solid #76a6c4;
+  outline: 1px solid #79abca;
+}

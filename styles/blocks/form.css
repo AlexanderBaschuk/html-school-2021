@@ -41,6 +41,7 @@
 
 .form__label-text {
   text-align: left;
+  color: #000;
 }
 
 .form__label.label-text {
@@ -68,6 +69,7 @@
 .form__input {
   height: 58px;
   background-color: #f2f2f2;
+  color: #000;
   border: none;
   padding: 18px 22px 14px 22px;
   font-weight: bold;
@@ -76,7 +78,7 @@
 }
 
 .form__input:focus {
-  outline: 1px solid;
+  outline: 1px solid #e4e4e4;
 }
 
 .form__input::placeholder {
@@ -132,7 +134,7 @@
 }
 
 .form__textarea:focus {
-  outline: none;
+  outline: 1px solid #e4e4e4;
 }
 
 .form__submit-button-wrapper {

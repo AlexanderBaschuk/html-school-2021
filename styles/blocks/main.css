@@ -1,6 +1,9 @@
 .main {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main__banner {

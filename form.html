@@ -146,6 +146,7 @@
                     type="text"
                     name="firstname"
                     placeholder="Введите имя"
+                    maxlength="20"
                     required
                   />
                 </label>
@@ -158,6 +159,7 @@
                     type="text"
                     name="lastname"
                     placeholder="Введите фамилию"
+                    maxlength="20"
                     required
                   />
                 </label>
@@ -170,6 +172,7 @@
                     type="text"
                     name="patronymic"
                     placeholder="Введите отчество"
+                    maxlength="20"
                   />
                 </label>
               </li>
@@ -189,6 +192,9 @@
                       name="tel"
                       value=""
                       placeholder="Введите телефон"
+                      minlength="10"
+                      maxlength="16"
+                      pattern="+?[0-9 -]{14}"
                       required
                     />
                     <span class="form__input-icon"

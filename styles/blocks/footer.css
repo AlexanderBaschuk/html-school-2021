@@ -12,3 +12,33 @@
 .footer__hashtag {
   margin-bottom: 32px;
 }
+
+.footer__socials {
+  margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 60px 36px 60px;
+  }
+
+  .footer__hashtag {
+    margin-bottom: 0;
+  }
+
+  .footer__socials {
+    margin-bottom: 0;
+  }
+
+  .footer__creator {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 36px 120px 36px 120px;
+  }
+}

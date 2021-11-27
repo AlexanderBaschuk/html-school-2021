@@ -10,6 +10,8 @@
   position: relative;
   background-color: #ddebf4;
   background-image: url("/Images/back-mobile.jpg");
+  height: 389px;
+  background-repeat: no-repeat;
   text-align: center;
   overflow: hidden;
   background-position: bottom;
@@ -26,6 +28,7 @@
 .main__banner-img {
   position: absolute;
   top: 90px;
+  max-width: 90%;
   transform: translateX(-50%);
 }
 
@@ -39,4 +42,15 @@
   position: absolute;
   bottom: 0;
   transform: translateX(-50%);
+}
+
+@media (min-width: 320px) {
+  .main__banner {
+    background-image: url("/Images/back-desktop.jpg");
+    height: 518px;
+  }
+
+  .main__banner-img {
+    top: 76px;
+  }
 }

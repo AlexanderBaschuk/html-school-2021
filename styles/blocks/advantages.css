@@ -37,6 +37,8 @@
 }
 
 .small-card {
+  display: block;
+  width: 100%;
   background-color: #eeeeee;
   padding: 26px 20px;
 }
@@ -150,6 +152,16 @@
   .advantages__reason:nth-child(2) .advantages__article {
     flex-direction: row-reverse;
   }
+
+  .advantages__reason.small-card {
+    display: inline-block;
+    width: 32%; /* TODO */
+    height: 100%;
+  }
+
+  .small-card:not(:last-child)::after {
+    content: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -164,7 +176,7 @@
   .advantages__reason-large-image.desktop {
     display: flex;
   }
-  
+
   .advantages__reason-large-image-wrapper {
     max-width: 800px;
   }

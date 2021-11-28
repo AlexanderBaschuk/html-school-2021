@@ -42,7 +42,7 @@
   transform: translateX(-50%);
 }
 
-@media (min-width: 320px) {
+@media (min-width: 321px) {
   .main__banner {
     background-image: url("/Images/back-desktop.jpg");
     height: 518px;

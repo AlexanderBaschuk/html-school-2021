@@ -128,3 +128,39 @@
     width: 120%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
+
+@media (min-width: 768px) {
+  .menu-visible .header__logo-link {
+    visibility: visible;
+  }
+
+  .header__menu-list {
+    visibility: visible;
+    position: static;
+    display: flex;
+    background-color: #fff;
+    z-index: 0;
+  }
+
+  .header__menu-item {
+    background-color: #fff;
+    position: relative;
+    height: 56px;
+  }
+
+  .header__menu-item:nth-child(2) {
+    margin-right: 140px;
+  }
+
+  .header__menu-item:last-child::after {
+    content: none;
+  }
+
+  .header__menu-link {
+    color: #000;
+  }
+
+  .header__toggle-menu-button {
+    display: none;
+  }
+}

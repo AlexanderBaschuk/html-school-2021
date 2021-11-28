@@ -8,7 +8,6 @@
   position: relative;
   background-color: #ddebf4;
   background-image: url("/Images/back-mobile.jpg");
-  height: 389px;
   background-repeat: no-repeat;
   text-align: center;
   overflow: hidden;
@@ -16,24 +15,30 @@
 }
 
 .main__banner.title-slogan {
-  min-height: 389px;
+  height: 389px;
 }
 
 .main__banner.title-only {
-  min-height: 157px;
-}
-
-.main__banner-img {
-  position: absolute;
-  top: 90px;
-  max-width: 90%;
-  transform: translateX(-50%);
+  height: 157px;
 }
 
 .main__banner-main-text {
   position: absolute;
-  top: 51px;
-  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__banner.title-slogan .main__banner-main-text {
+  top: 46%;
+  max-height: 214px;
+}
+
+.main__banner.title-only .main__banner-main-text {
+  top: 50%;
+  max-height: 40px;
 }
 
 .main__banner-triangle {
@@ -45,10 +50,21 @@
 @media (min-width: 321px) {
   .main__banner {
     background-image: url("/Images/back-desktop.jpg");
-    height: 518px;
   }
 
-  .main__banner-img {
-    top: 76px;
+  .main__banner.title-slogan {
+    height: 518px;
+  }
+  
+  .main__banner.title-only {
+    height: 300px;
+  }
+
+  .main__banner.title-slogan .main__banner-main-text {
+    max-height: 350px;
+  }
+  
+  .main__banner.title-only .main__banner-main-text {
+    max-height: 80px;
   }
 }

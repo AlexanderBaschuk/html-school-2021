@@ -101,3 +101,9 @@
   display: block;
   margin-bottom: 16px; /* Сколько? */
 }
+
+@media (min-width: 321px) {
+  .advantages__triangle {
+    display: none;
+  }
+}

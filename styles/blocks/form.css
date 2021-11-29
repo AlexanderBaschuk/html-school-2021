@@ -87,6 +87,7 @@
 }
 
 .form__input-with-icon {
+  width: 100%;
   position: relative;
 }
 

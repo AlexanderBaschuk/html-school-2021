@@ -7,6 +7,7 @@
 }
 
 .custom-radio {
+  flex: 0 0 auto;
   display: inline-flex;
   position: relative;
   width: 46px;

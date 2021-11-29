@@ -2,7 +2,7 @@
   display: block;
   background-color: #81b3d2;
   color: #fff;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -14,6 +14,5 @@
 }
 
 .button:focus {
-  _outline: 1px solid #76a6c4;
   outline: 1px solid #79abca;
 }

@@ -93,7 +93,6 @@
 .advantages__reason-subitems {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   background-color: #fff;
   padding: 26px 20px 36px 20px;
 }
@@ -115,6 +114,11 @@
   flex: 40px 0 0;
   align-items: flex-end;
   justify-content: center;
+}
+
+.advantages__reason-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .advantages__reason-subitem-description {
@@ -146,10 +150,11 @@
 }
 
 @media (min-width: 512px) {
-  .advantages__article-emphasized-block {
-    height: 256px;
-    min-width: 256px;
-    width: calc(100% / 3);
+  .advantages__reasons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
   }
 
   .advantages__reason-large-image-wrapper {
@@ -157,11 +162,10 @@
     width: calc(100% / 3 * 2);
   }
 
-  .advantages__reasons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+  .advantages__article-emphasized-block {
+    height: 256px;
+    min-width: 256px;
+    width: calc(100% / 3);
   }
 
   .advantages__reason:nth-child(1) .advantages__article {
@@ -174,6 +178,7 @@
 
   .advantages__reason.small-card {
     display: block;
+    padding: 42px 42px;
     width: calc(100% / 3);
   }
 
@@ -197,5 +202,41 @@
 
   .advantages__reason-large-image-wrapper {
     max-width: 800px;
+  }
+
+  .advantages__reason-subitems {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+  }
+  
+  .advantages__reason-subitem {
+    align-items: center;
+    padding: 60px 36px;
+    flex: 1;
+    flex-direction: column;
+    gap: 26px;
+  }
+  
+  .advantages__reason-subitem:not(:last-child) {
+    margin: 0;
+  }
+
+  .advantages__reason-icon-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 76px 0 0;
+    width: 76px;
+  }
+
+  .advantages__reason-subitem-title {
+    margin-bottom: 28px; /* Сколько? */
+  }
+
+  .advantages__reason-subitem-description {
+    text-align: center;
+    padding: 0;
   }
 }

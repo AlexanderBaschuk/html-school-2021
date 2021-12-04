@@ -17,7 +17,7 @@
   }
 
   .input-checkbox:focus + .custom-checkbox {
-    outline: 1px solid #e4e4e4;
+    outline: 1px solid #56f;
   }
   
   .input-checkbox:checked + .custom-checkbox:before {

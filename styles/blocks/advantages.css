@@ -149,6 +149,12 @@
   .advantages__article-emphasized-block {
     height: 256px;
     min-width: 256px;
+    width: calc(100% / 3);
+  }
+
+  .advantages__reason-large-image-wrapper {
+    height: 256px;
+    width: calc(100% / 3 * 2);
   }
 
   .advantages__reasons {

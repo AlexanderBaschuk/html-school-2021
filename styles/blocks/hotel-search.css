@@ -21,3 +21,17 @@
   width: 100%;
   max-width: 458px;
 }
+
+@media (min-width: 768px) {
+  .hotel-search {
+    padding: 60px 0;
+  }
+
+  .hotel-search__teaser {
+    margin-bottom: 32px;
+  }
+
+  .hotel-search__text {
+    margin-bottom: 32px;
+  }
+}

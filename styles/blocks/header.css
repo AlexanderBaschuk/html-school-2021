@@ -151,10 +151,11 @@
     background-color: #fff;
     position: relative;
     height: 56px;
+    width: 20%;
   }
 
   .header__menu-item:nth-child(2) {
-    margin-right: 140px;
+    margin-right: auto;
   }
 
   .header__menu-item:last-child::after {

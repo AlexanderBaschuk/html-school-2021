@@ -178,21 +178,21 @@
                 </svg>
               </div>
               <div class="advantages__reason-large-image-wrapper">
-                <img
-                  class="advantages__reason-large-image mobile"
-                  src="/Images/photo-city-mobile.jpg"
-                  alt="Фотография городка"
-                />
-                <img
-                  class="advantages__reason-large-image tablet"
-                  src="/Images/photo-city-tablet.jpg"
-                  alt="Фотография городка"
-                />
-                <img
-                  class="advantages__reason-large-image desktop"
-                  src="/Images/photo-city-desktop.jpg"
-                  alt="Фотография городка"
-                />
+                <picture class="advantages__reason-large-image_">
+                  <source
+                    srcset="/Images/photo-city-mobile.jpg"
+                    media="(max-width: 320px)"
+                  />
+                  <source
+                    srcset="/Images/photo-city-tablet.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    class="advantages__reason-large-image"
+                    src="/Images/photo-city-desktop.jpg"
+                    alt="Фотография городка"
+                  />
+                </picture>
               </div>
             </article>
 
@@ -306,21 +306,24 @@
                 </p>
               </div>
               <div class="advantages__reason-large-image-wrapper">
-                <img
-                  class="advantages__reason-large-image mobile"
-                  src="/Images/photo-bridge-mobile.jpg"
+                <picture
+                  class="advantages__reason-large-image_"
                   alt="Мост Дьявола"
-                />
-                <img
-                  class="advantages__reason-large-image tablet"
-                  src="/Images/photo-bridge-tablet.jpg"
-                  alt="Мост Дьявола"
-                />
-                <img
-                  class="advantages__reason-large-image desktop"
-                  src="/Images/photo-bridge-desktop.jpg"
-                  alt="Мост Дьявола"
-                />
+                >
+                  <source
+                    srcset="/Images/photo-bridge-mobile.jpg"
+                    media="(max-width: 320px)"
+                  />
+                  <source
+                    srcset="/Images/photo-bridge-tablet.jpg"
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    class="advantages__reason-large-image desktop"
+                    src="/Images/photo-bridge-desktop.jpg"
+                    alt="Мост Дьявола"
+                  />
+                </picture>
               </div>
             </article>
           </li>
@@ -367,21 +370,15 @@
       </div>
 
       <div class="map">
-        <img
-          class="map__img map-mobile"
-          src="/Images/map-mobile.jpg"
-          alt="Карта"
-        />
-        <img
-          class="map__img map-tablet"
-          src="/Images/map-tablet.jpg"
-          alt="Карта"
-        />
-        <img
-          class="map__img map-desktop"
-          src="/Images/map-desktop.jpg"
-          alt="Карта"
-        />
+        <picture>
+          <source srcset="/Images/map-mobile.jpg" media="(max-width: 320px)" />
+          <source srcset="/Images/map-tablet.jpg" media="(max-width: 768px)" />
+          <img
+            class="map__img map-desktop"
+            src="/Images/map-desktop.jpg"
+            alt="Карта"
+          />
+        </picture>
         <svg
           class="map__marker"
           width="27"

@@ -11,21 +11,44 @@
   margin-bottom: 32px;
 }
 
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.form > * {
+  order: 1;
+}
+
 .form__fieldset {
+  position: relative;
   display: block;
   border: 0;
   padding: 40px 20px 32px 20px;
   margin: 0;
+  width: 100%;
 }
 
 .form__fieldset:not(:last-of-type) {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.form__fieldset.contacts .form__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 .form__legend {
   position: relative;
   top: 20px;
   padding: 0;
+}
+
+.form__list-item {
+  width: 100%;
 }
 
 .form__list-item:not(:last-child) {
@@ -150,4 +173,32 @@
 
 .form__required-fields-note {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .form__fieldset.feeling {
+    order: 0;
+    width: 50%;
+    _border-right: 1px solid #dbdbdb;
+  }
+
+  .form__fieldset.feeling::after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #dbdbdb;
+    height: 90%;
+    top: -4px;
+    bottom: 4px;
+    right: 0;
+  }
+
+  .form__fieldset.introduce {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form__fieldset.contacts .form__list {
+    flex-direction: row;
+  }
 }

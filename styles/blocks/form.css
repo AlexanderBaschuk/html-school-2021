@@ -34,25 +34,35 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
-.form__fieldset.contacts .form__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-}
-
 .form__legend {
   position: relative;
   top: 20px;
   padding: 0;
 }
 
-.form__list-item {
-  width: 100%;
+.form__list {
+  display: flex;
+  flex-direction: column;
 }
 
-.form__list-item:not(:last-child) {
-  margin-bottom: 20px;
+.form__fieldset.introduce .form__list {
+  gap: 20px;
+}
+
+.form__fieldset.contacts .form__list {
+  gap: 14px;
+}
+
+.form__fieldset.feeling .form__list {
+  gap: 20px;
+}
+
+.form__fieldset.places .form__list {
+  gap: 32px;
+}
+
+.form__list-item {
+  width: 100%;
 }
 
 .form__label {
@@ -195,10 +205,18 @@
   .form__fieldset.introduce {
     width: 50%;
   }
+
+  .form__fieldset.places .form__list-item {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1200px) {
   .form__fieldset.contacts .form__list {
     flex-direction: row;
+  }
+
+  .places .form__list-item {
+    width: 25%;
   }
 }

@@ -224,8 +224,13 @@
     padding: 40px 100px 32px 100px;
   }
 
+  .form__fieldset.places .form__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .form__fieldset.places .form__list-item {
-    width: 50%;
+    width: calc((100% / 2) - (32px / 2));
   }
 
   .form__fieldset.emotions {
@@ -269,6 +274,6 @@
   }
 
   .form__fieldset.places .form__list-item {
-    width: 25%;
+    width: calc((100% / 4) - (32px * 3 / 4));
   }
 }

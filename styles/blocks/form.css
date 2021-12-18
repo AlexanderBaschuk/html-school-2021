@@ -99,78 +99,18 @@
   padding: 0 20px;
 }
 
-.form__input {
-  height: 58px;
-  background-color: #f2f2f2;
-  color: #000;
-  border: none;
-  padding: 18px 22px 14px 22px;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.form__input:focus {
-  outline: 1px solid #56f;
-}
-
-.form__input::placeholder {
-  color: #000;
-}
-
-.form__input-with-icon {
-  width: 100%;
-  position: relative;
-}
-
-.form__input-with-icon .form__input {
-  padding-right: 80px;
-}
-
-.form__input-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 58px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e6e6e6;
-}
-
-.input-text {
+.form__input.text-input {
   width: 100%;
 }
 
-.input-tel {
-  width: 100%;
-}
-
-.input-email {
+.form__input.text-input-with-icon {
   width: 100%;
 }
 
 .form__textarea {
   width: 100%;
   min-height: 160px;
-  padding: 12px 20px 28px 20px;
   resize: vertical;
-  background-color: #f2f2f2;
-  border: none;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.form__textarea::placeholder {
-  color: #000;
-}
-
-.form__textarea:focus {
-  outline: 1px solid #56f;
 }
 
 .form__submit-button-wrapper {
@@ -199,7 +139,8 @@
     border-bottom: none;
   }
 
-  .form-intro__header, .form-intro__description {
+  .form-intro__header,
+  .form-intro__description {
     max-width: 436px;
   }
 

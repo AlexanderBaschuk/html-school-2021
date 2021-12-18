@@ -18,7 +18,3 @@
 a:focus-visible {
   outline: 1px solid #56f;
 }
-
-::placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-}

@@ -1,0 +1,93 @@
+.text-input {
+  height: 58px;
+  background-color: #f2f2f2;
+  color: #000;
+  border: 4px solid #f2f2f2;
+  padding: 18px 22px 14px 22px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.text-input:hover {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.text-input:focus {
+  background-color: #fff;
+  border-color: #e5e5e5;
+  outline: none;
+}
+
+.text-input::placeholder {
+  font-family: inherit;
+  color: #000;
+}
+
+.text-input-with-icon {
+  position: relative;
+}
+
+.text-input-with-icon input {
+  width: 100%;
+  height: 100%;
+  padding: 18px 80px 14px 22px;
+  background-color: #f2f2f2;
+  color: #000;
+  border: 4px solid #f2f2f2;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.text-input-with-icon input::placeholder {
+  font-family: inherit;
+  color: #000;
+}
+
+.text-input-with-icon input:hover {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.text-input-with-icon input:focus {
+  background-color: #fff;
+  border-color: #e5e5e5;
+  outline: none;
+}
+
+.text-input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+}
+
+.text-area {
+  padding: 12px 20px 28px 20px;
+  background-color: #f2f2f2;
+  border: 4px solid #f2f2f2;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.text-area:focus {
+  background-color: #fff;
+  border-color: #e5e5e5;
+  outline: none;
+}
+
+.text-area::placeholder {
+  font-family: inherit;
+  color: #000;
+}

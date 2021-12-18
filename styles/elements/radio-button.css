@@ -10,14 +10,25 @@
   flex: 0 0 auto;
   display: inline-flex;
   position: relative;
-  width: 46px;
-  height: 46px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
+  border: 4px solid #f2f2f2;
   background-color: #f2f2f2;
 }
 
-.input-radio:focus + .custom-radio {
-  outline: 1px solid #56f;
+.input-radio:hover:not(:active) + .custom-radio {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.input-radio:active + .custom-radio {
+  border-color: #d5d5d5;
+  background-color: #d5d5d5;
+}
+
+.input-radio:focus-visible:not(:active) + .custom-radio {
+  border-color: #e5e5e5;
 }
 
 .input-radio:checked + .custom-radio:before {

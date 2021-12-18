@@ -1,29 +1,40 @@
 .input-checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  .custom-checkbox {
-    flex: 0 0 auto;
-    display: inline-flex;
-    position: relative;
-    width: 46px;
-    height: 46px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-  .input-checkbox:focus + .custom-checkbox {
-    outline: 1px solid #56f;
-  }
-  
-  .input-checkbox:checked + .custom-checkbox:before {
-    content: url("data:image/svg+xml,%3Csvg width='24' height='17' viewBox='0 0 24 17' fill='%23000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m22.925 1.325-1.1-1.1c-.3-.3-.9-.3-1.2 0l-11.9 11.9-6.2-6.2c-.3-.3-.9-.3-1.2 0l-1.1 1.1c-.3.3-.3.9 0 1.2l7.8 7.8c.2.2.4.2.6.2.2 0 .4-.1.6-.2l13.5-13.5c.5-.3.5-.8.2-1.2Z' /%3E%3C/svg%3E");
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -42%);
-  }
+.custom-checkbox {
+  flex: 0 0 auto;
+  display: inline-flex;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  border: 5px solid #f2f2f2;
+}
+
+.input-checkbox:hover:not(:active) + .custom-checkbox {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.input-checkbox:active + .custom-checkbox {
+  border-color: #d5d5d5;
+  background-color: #d5d5d5;
+}
+
+.input-checkbox:focus-visible:not(:active) + .custom-checkbox {
+  border-color: #e5e5e5;
+}
+
+.input-checkbox:checked + .custom-checkbox:before {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='17' viewBox='0 0 24 17' fill='%23000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m22.925 1.325-1.1-1.1c-.3-.3-.9-.3-1.2 0l-11.9 11.9-6.2-6.2c-.3-.3-.9-.3-1.2 0l-1.1 1.1c-.3.3-.3.9 0 1.2l7.8 7.8c.2.2.4.2.6.2.2 0 .4-.1.6-.2l13.5-13.5c.5-.3.5-.8.2-1.2Z' /%3E%3C/svg%3E");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -42%);
+}

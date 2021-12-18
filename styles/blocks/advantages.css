@@ -213,3 +213,9 @@
     padding: 0;
   }
 }
+
+@media(min-width: 1200px) {
+  .advantages__reason.small-card {
+    padding: 42px 42px 62px 42px;
+  }
+}

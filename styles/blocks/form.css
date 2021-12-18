@@ -245,16 +245,21 @@
   }
 
   .form__label-text-mobile {
-    visibility: hidden;
+    display: none;
   }
 
   .form__fieldset.contacts .form__list {
     flex-direction: row;
     justify-content: space-between;
+    gap: 0;
   }
 
   .form__fieldset.contacts .form__list-item {
-    width: auto;
+    width: 50%;
+  }
+
+  .form__fieldset.contacts .form__list-item:not(:last-child) {
+    padding-right: 20px;
   }
 
   .form__fieldset.contacts .form__label {

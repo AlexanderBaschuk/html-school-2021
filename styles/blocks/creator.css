@@ -8,3 +8,11 @@
 .creator__link {
   display: inline-flex;
 }
+
+.creator__link:hover:not(:active) .creator__logo {
+  fill: #81b3d2;
+}
+
+.creator__link:active .creator__logo {
+  opacity: 0.3;
+}

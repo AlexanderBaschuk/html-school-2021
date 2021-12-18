@@ -16,3 +16,11 @@
 .button:focus-visible {
   outline: 1px solid #56f;
 }
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}

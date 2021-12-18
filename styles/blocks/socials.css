@@ -11,3 +11,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.socials__link:hover:not(:active) {
+  background-color: #669EC0;
+}
+
+.socials__link:active {
+  background-color: #5496BD;
+}
+
+.socials__link:active .socials__icon {
+  opacity: 0.3;
+}

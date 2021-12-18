@@ -7,7 +7,6 @@
   flex-direction: column;
   align-items: center;
   padding: 36px 20px 16px 20px;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .form-intro__header {
@@ -26,21 +25,19 @@
 
 .form__fieldset {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   border: 0;
-  padding: 40px 20px 32px 20px;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 20px 32px 20px;
   margin: 0;
   width: 100%;
 }
 
-.form__fieldset:not(:last-of-type) {
-  border-bottom: 1px solid #e5e5e5;
-}
-
 .form__legend {
-  position: relative;
-  top: 20px;
-  padding: 0;
+  float: left;
+  width: 100%;
 }
 
 .form__list {
@@ -198,7 +195,7 @@
   }
 
   .form-intro {
-    padding: 36px 60px 40px 60px;
+    padding: 36px 60px 60px 60px;
     border-bottom: none;
   }
 
@@ -206,23 +203,16 @@
     max-width: 436px;
   }
 
-  .form__fieldset.introduce {
-    width: 50%;
-    padding: 40px 0 32px 60px;
-  }
-
-  .form__fieldset.contacts {
-    padding: 40px 0 32px 0;
-  }
-
-  .form__fieldset.contacts .form__list {
-    gap: 24px;
+  .form__legend {
+    float: none;
+    padding: 0 20px;
   }
 
   .form__fieldset.feeling {
     order: 0;
     width: 50%;
-    padding: 40px 20px 32px 0;
+    padding: 40px 20px 72px 0;
+    border-top: none;
   }
 
   .form__fieldset.feeling::after {
@@ -235,8 +225,26 @@
     right: 0;
   }
 
+  .form__fieldset.introduce {
+    width: 50%;
+    padding: 40px 0 72px 60px;
+    border-top: none;
+  }
+
+  .form__fieldset:not(.introduce):not(.feeling) .form__legend {
+    width: 400px;
+  }
+
+  .form__fieldset.contacts {
+    padding: 16px 0 72px 0;
+  }
+
+  .form__fieldset.contacts .form__list {
+    gap: 24px;
+  }
+
   .form__fieldset.places {
-    padding: 40px 100px 32px 100px;
+    padding: 40px 100px 72px 100px;
   }
 
   .form__fieldset.places .form__list {
@@ -249,11 +257,11 @@
   }
 
   .form__fieldset.emotions {
-    padding: 40px 0 32px 0;
+    padding: 50px 0 58px 0;
   }
 
   .form__submit-button-wrapper {
-    padding: 30px 0 60px 0;
+    padding: 0 0 60px 0;
     justify-content: space-between;
     align-items: center;
   }
@@ -274,11 +282,23 @@
   }
 
   .form-intro {
-    padding: 116px 120px 40px 120px;
+    padding: 116px 120px 60px 120px;
   }
 
   .form__label-text-mobile {
     display: none;
+  }
+
+  .form__fieldset.feeling {
+    padding: 50px 20px 72px 0;
+  }
+
+  .form__fieldset.introduce {
+    padding: 52px 0 72px 80px;
+  }
+
+  .form__fieldset.contacts {
+    padding: 50px 0 72px 0;
   }
 
   .form__fieldset.contacts .form__list {
@@ -312,10 +332,14 @@
   }
 
   .form__fieldset.places {
-    padding: 40px 0 32px 0;
+    padding: 50px 0 80px 0;
   }
 
   .form__fieldset.places .form__list-item {
     width: calc((100% / 4) - (32px * 3 / 4));
+  }
+
+  .form__fieldset.emotions {
+    padding: 50px 0 58px 0;
   }
 }

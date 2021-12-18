@@ -219,9 +219,8 @@
     content: "";
     position: absolute;
     border-right: 1px solid #dbdbdb;
-    height: 90%;
-    top: -4px;
-    bottom: 4px;
+    top: -28px;
+    bottom: 72px;
     right: 0;
   }
 

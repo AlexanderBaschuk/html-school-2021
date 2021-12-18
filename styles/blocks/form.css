@@ -177,6 +177,9 @@
 }
 
 .form__submit-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   padding: 20px 20px 40px 20px;
 }
 
@@ -196,6 +199,7 @@
 
   .form-intro {
     padding: 36px 60px 40px 60px;
+    border-bottom: none;
   }
 
   .form-intro__header, .form-intro__description {
@@ -246,6 +250,20 @@
 
   .form__fieldset.emotions {
     padding: 40px 0 32px 0;
+  }
+
+  .form__submit-button-wrapper {
+    padding: 30px 0 60px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__submit-button {
+    width: 50%;
+  }
+
+  .form__required-fields-note {
+    display: block;
   }
 }
 

@@ -36,6 +36,14 @@
   margin-bottom: 12px; /* Сколько? */
 }
 
+.advantages__title-br {
+  display: none;
+}
+
+.advantages__text-br {
+  display: none;
+}
+
 .advantages__reason-text:not(:last-of-type) {
   margin-bottom: 12px; /* Сколько? */
 }
@@ -46,7 +54,9 @@
 }
 
 .advantages__reason.small-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #eeeeee;
   padding: 26px 20px;
 }
@@ -180,6 +190,14 @@
     max-width: 800px;
   }
 
+  .advantages__reason-title {
+    max-width: 155px;
+  }
+
+  .advantages__title-br {
+    display: inline;
+  }
+
   .advantages__reason-subitems {
     padding: 0;
     display: flex;
@@ -200,7 +218,6 @@
   }
 
   .advantages__reason.small-card {
-    display: block;
     padding: 42px 42px;
     width: calc(100% / 3);
   }
@@ -234,6 +251,10 @@
 
   .advantages__article-emphasized-block {
     padding: 40px;
+  }
+
+  .advantages__text-br {
+    display: inline;
   }
 
   .advantages__reason.small-card {

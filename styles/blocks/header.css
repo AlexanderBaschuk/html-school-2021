@@ -11,6 +11,10 @@
   z-index: 1;
 }
 
+.header__logo-background {
+  display: none;
+}
+
 .menu-visible .header__logo-link {
   visibility: hidden;
 }
@@ -196,6 +200,10 @@
 
 /* Desktop */
 @media (min-width: 1200px) {
+  .header__logo-background {
+    display: block;
+  }
+
   .header__menu-link:hover:not(:active) {
     color: #81b3d2;
   }

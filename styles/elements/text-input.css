@@ -81,6 +81,11 @@
   line-height: 26px;
 }
 
+.text-area:hover {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
 .text-area:focus {
   background-color: #fff;
   border-color: #e5e5e5;
